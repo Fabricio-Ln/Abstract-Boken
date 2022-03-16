@@ -1,19 +1,26 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { GameplayComponent } from './abstract/pages/gameplay/gameplay.component';
-import { HomeComponent } from './abstract/pages/home/home.component';
+import { LoginComponent } from './auth/pages/login/login.component';
+
+import { DownloadComponent } from './pages/download/download.component';
+import { GameplayComponent } from './pages/gameplay/gameplay.component';
+import { HomeComponent } from './pages/home/home.component';
+import { NotFoundComponent } from './pages/not-found/not-found.component';
 
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: 'home', component: GameplayComponent }
+  { path: 'home', component: HomeComponent },
+  { path: 'descargar', component: DownloadComponent },
+  { path: 'gameplay', component: GameplayComponent },
+  { path: '404', component: NotFoundComponent},
+  {path:  'login', component: LoginComponent},
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '**', redirectTo: '/404', pathMatch: 'full'}
 ];
 
 @NgModule({
-  imports: 
-  [RouterModule.forRoot(routes)],
-  exports: 
-  [RouterModule]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 })
 export class AppRoutingModule { }
 

@@ -1,1 +1,82 @@
-<p>login works!</p>
+<head>
+	<title>Registration Form</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/Users/fabriciolopez/Desktop/ClonesForStudents-main/portfolio/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cont">
+        <form action="#" onsubmit="return validate()">
+    	<div class="form sign-in">
+    		<h2>Inicio de sesion</h2>
+    		<label>
+    			<span>Correo electronico</span>
+    			<input type="email" name="email" id="email">
+    		</label>
+             <label id="inv0" style="color: red; visibility: hidden;">**Correo electronico invalido</label>
+    		<label>
+    		<span>Contraseña</span>
+    		<input type="password" name="password" id="lpass">
+    		</label>
+            <label id="inv9" style="color: red; visibility: hidden;">**Contraseña invalida</label>
+    		<button onclick="validate()" type="button" class="submit">Iniciar sesion</button>
+            <p class="forgot-pass">Olvidaste tu contraseña?</p>
+
+            <div class="social-media">
+            	<ul>
+            		<li><img src="/Users/fabriciolopez/Desktop/ClonesForStudents-main/portfolio/files/facebook.png"></li>
+            		<li><img src="/Users/fabriciolopez/Desktop/ClonesForStudents-main/portfolio/files/twitter.png"></li>
+            		<li><img src="/Users/fabriciolopez/Desktop/ClonesForStudents-main/portfolio/files/linkedin.png"></li>
+            		<li><img src="/Users/fabriciolopez/Desktop/ClonesForStudents-main/portfolio/files/instagram.png"></li>
+            	</ul>
+            </div>
+    	</div>
+    </form>
+
+    	<div class="sub-cont">
+    		<div class="img">
+    			<div class="img-text m-up">
+    				<h2>Nuevo aqui?</h2>
+    				<p>Regístrate y descubre un nuevo mundo</p>
+    			</div>
+    			<div class="img-text m-in">
+    				<h2>Unete a nosotros?</h2>
+    				<p>Si ya tienes una cuenta, solo inicia sesión. ¡Te hemos extrañado!</p>
+    			</div>
+    			<div class="img-btn">
+    				<span class="m-up">Registrarse</span>
+    				<span class="m-in">Iniciar sesion</span>
+    			</div>
+    		</div>
+            <form action="#" onsubmit="return validation()">
+    		<div class="form sign-up">
+    			<h2>Registrarse</h2>
+    			<label>
+    				<span>Nombre</span>
+    				<input type="text" name="user" id="user">
+                    <label id="inv" style="color: red; visibility: hidden;">**Campo obligatorio</label>
+                </label>
+
+    			<label>
+    				<span>Correo electronico</span>
+    				<input type="email" name="mail" id="mail">
+    			</label>
+                <label id="inv3" style="color: red; visibility: hidden;">**Campo obligatorio</label>
+    			<label>
+    				<span>Contraseña</span>
+    				<input type="password" name="pass" id="pass">
+    			</label>
+                 <label id="inv1" style="color: red; visibility: hidden;">**Campo obligatorio</label>
+    			<label>
+    				<span>Confirmar contraseña</span>
+    				<input type="password" name="conpass" id="conpass">
+    			</label>
+                <label id="inv2" style="color: red; visibility: hidden;">**Campo obligatorio</label>
+    			<button onclick="validation()" type="button" class="submit">Registrarse ahora</button>
+    		</div>
+            </form>
+    	</div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
