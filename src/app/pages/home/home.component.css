@@ -184,7 +184,8 @@ main .carousel-section {
     grid-template-columns: 1fr 300px;
     grid-template-areas: 'main aside';
     gap: 32px;
-
+    margin-bottom: 250px;
+margin-top: 0%;
 }
 
 main .carousel-section main {
@@ -194,7 +195,7 @@ main .carousel-section main {
     background-size: cover;
     background-repeat: no-repeat;
     grid-area: main;
-    height: 700px;
+    height: 725px;
     width: 100%;
     border-radius: 12px;
     display: flex;

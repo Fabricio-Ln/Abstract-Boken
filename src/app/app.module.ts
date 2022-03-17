@@ -10,6 +10,8 @@ import { DownloadComponent } from './pages/download/download.component';
 import { GameplayComponent } from './pages/gameplay/gameplay.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ErrorPageComponent } from './shared/error-page/error-page.component';
+import { NovedadesComponent } from './pages/novedades/novedades.component';
+import { AyudaComponent } from './pages/ayuda/ayuda.component';
 
 
 @NgModule({
@@ -21,7 +23,9 @@ import { ErrorPageComponent } from './shared/error-page/error-page.component';
     GameplayComponent,
     DownloadComponent,
     ErrorPageComponent,
-    NavigationComponent
+    NavigationComponent,
+    NovedadesComponent,
+    AyudaComponent
   ],
   imports: [
     BrowserModule,
