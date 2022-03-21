@@ -18,7 +18,7 @@ main .carousel-section main {
     border-radius: 12px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: flex-end;
     padding: 72px 48px;
     gap: 12px;
 }

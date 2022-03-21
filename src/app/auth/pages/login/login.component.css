@@ -11,7 +11,7 @@ body{
 	justify-content: center;
 	align-items: center;
 	background-image:
- url("/Users/fabriciolopez/Desktop/ClonesForStudents-main/portfolio/files/background-body.jpeg");
+url("https://c.wallhere.com/photos/53/ed/polygon_art_landscape_sketches-1469525.jpg!d");
  background-size: cover;
  background-repeat:no-repeat;
  background-position: center center;
@@ -36,7 +36,6 @@ input, button{
 .form{
 	
 	position: relative;
-	width: 640px;
 	height: 100%;
 	padding: 50px 30px;
 	-webkit-transition:-webkit-transform 1.2s ease-in-out;
@@ -234,6 +233,12 @@ background-color: #e0dbb8;
 	-webkit-transition-timing-function:ease-out;
 	        transition-timing-function: ease-out;
 }
+.sign-in p{
+	font-size: 10px;
+	color: #fff;
+	text-align: center;
+	font-size:medium;
+}
 
 .cont.s-signup .sign-in{
   -webkit-transition-timing-function:ease-in-out;
@@ -292,15 +297,6 @@ background-color: #e0dbb8;
 		    transform: translateY(-72px);
 }
 
-.sign-up{
-	-webkit-transform:translate3d(-900px,0,0);
-		    transform: translate3d(-900px,0,0);
-			background-image:url("/Users/fabriciolopez/Desktop/Booken-Games/src/components/Login/files/background-body.jpeg");
-			background-size: cover;
-			background-repeat:no-repeat;
-			background-position: center center;
-		   
-		}
 
 .cont.s-signup .sign-up{
 	-webkit-transform:translate3d(0,0,0);

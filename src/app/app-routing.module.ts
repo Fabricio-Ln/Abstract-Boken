@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './auth/pages/login/login.component';
+import { RegistrarComponent } from './auth/pages/registrar/registrar.component';
 import { AyudaComponent } from './pages/ayuda/ayuda.component';
 
 import { DownloadComponent } from './pages/download/download.component';
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: '404', component: NotFoundComponent},
   {path:  'login', component: LoginComponent},
   {path:  'ayuda', component: AyudaComponent},
+  {path:  'registro', component: RegistrarComponent},
   {path:  'novedades', component: NovedadesComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', redirectTo: '/404', pathMatch: 'full'}

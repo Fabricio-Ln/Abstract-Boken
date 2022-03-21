@@ -185,7 +185,7 @@ main .carousel-section {
     grid-template-areas: 'main aside';
     gap: 32px;
     margin-bottom: 50px;
-margin-top: 0%;
+margin-top: 5%;
 }
 
 main .carousel-section main {
@@ -334,21 +334,19 @@ main .carousel-section aside {
 .sales-section .games div {
 
     width: 20%;
-    display: flex;
+   
     flex-direction: column;
-    gap: 6px;
+ 
 
 }
 
-.sales-section .game {
-
-    transition: .2s;
-
+.footer{
+    height: 120px;
 }
 
 .sales-section .game:hover {
 
-    filter: brightness(150%);
+    filter: brightness(15%);
 
 }
 
@@ -360,13 +358,20 @@ main .carousel-section aside {
 
 }
 
-.sales-section .game h1, .sales-section .game h2 {
-
+.sales-section .game h1{
     color:rgb(0, 0, 0);
-    font-size: 14px;
-    font-weight: 500;
-  font-family: Verdana;
+    font-size:14px;
+   font-weight: bold;
+  font-family:Arial;
   text-align: justify;
+}
+
+.sales-section .game h2 {
+    color:rgb(0, 0, 0);
+    font-size:12px;
+    font-weight: 500;
+  font-family: Arial;
+ text-align: justify;
 
 }
 
@@ -378,6 +383,6 @@ main .carousel-section aside {
 
 .sales-section .game h2 {
 
-    opacity: .4;
+    opacity: 1;
 
 }
